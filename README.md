@@ -126,6 +126,9 @@ npm install tedious
 # 4️⃣ Instalar sequelize-auto
 npm install -g sequelize-auto
 # 5️⃣ Generar modelos (Database-First)
- sequelize-auto -o "./models" -d demo_control -h localhostdemo_control.mssql.somee.com -u SaulDuenas_SQLLogin_1 -x elmasmejor -e mssql
+ sequelize-auto -o "./models" -d demo_control -h demo_control.mssql.somee.com -u SaulDuenas_SQLLogin_1 -x elmasmejor -e mssql
 
+
+npx sequelize-auto -o "./models" -d demo_control -h demo_control.mssql.somee.com -u SaulDuenas_SQLLogin_1 -x elmasmejor -e mssql --dialect-options '{"options": {"encrypt": true, "trustServerCertificate": true}}'
+  
 
